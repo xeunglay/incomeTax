@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/content.css" />
+		<script type="text/javascript" src="js/wageCalc.js" ></script>
+	</head>
+	<body onload="show()">
+		<div class="container">
+			
+			<div class="tip">
+				
+				<div class="picBack">
+					<i></i>
+				</div>
+				
+				<div class="title">
+					<h4>个人工资计算器</h4>
+					<input type="text"  placeholder="税前工资" id="pay"/>
+					<input list="citylist" id="city" placeholder="输入城市"/>
+					<datalist id="citylist">
+						<option value="北京">
+	  					<option value="上海">
+	  					<option value="广州">
+					</datalist>
+					<input list="prolist" id="project" placeholder="输入缴纳项目"/>
+					<datalist id="prolist">
+						<option value="全部缴纳项目">
+	  					<option value="养老">
+	  					<option value="医疗">
+	  					<option value="失业">
+	  					<option value="工伤">
+	  					<option value="生育">
+	  					<option value="公积金">
+	  					<option value="个税">
+					</datalist>
+					<button id="enter">开始计算</button>
+				</div>
+				
+			</div>
+			
+			<p id="res">税后工资:￥<span id="afterTax"></span><span id="error"></span></p>
+			
+			<table cellpadding="2">
+				<thead>
+					<tr class="tab_title">
+						<th>缴纳项目</th>
+						<th>个人缴纳（<span id="totalPer"></span>）</th>
+						<th>单位缴纳（<span id="totalCom"></span>）<span class="unit">单位(元)</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>养老</td>
+						<td>
+							<input type="text" placeholder="" value="" />
+							<span class="common">%</span>
+							<span id="pensionPer"></span>
+						</td>
+						<td>
+							<input type="text" placeholder="" value=""/>
+							<span class="common">%</span>
+							<span id="pensionCom"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>医疗</td>
+						<td>
+							<input type="text" placeholder="" value="" />
+							<span class="common">%</span>
+							<span id="medicalPer"></span>
+						</td>
+						<td>
+							<input type="text" placeholder="" value=""/>
+							<span class="common">%</span>
+							<span  id="medicalCom"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>失业</td>
+						<td>
+							<input type="text" placeholder="" value=""/>
+							<span class="common">%</span>
+							<span  id="unemployPer"></span>
+						</td>
+						<td>
+							<input type="text" placeholder="" value=""/>
+							<span class="common">%</span>
+							<span  id="unemployCom"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>工伤</td>
+						<td>
+							<input type="text" placeholder="" value="" />
+							<span class="common">%</span>
+							<span id="injuryPer"></span>
+						</td>
+						<td>
+							<input type="text" placeholder="" value="" />
+							<span class="common">%</span>
+							<span id="injuryCom"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>生育</td>
+						<td>
+							<input type="text" placeholder="" value="" />
+							<span class="common">%</span>
+							<span id="brithPer"></span>
+						</td>
+						<td>
+							<input type="text" placeholder="" value="" />
+							<span class="common">%</span>
+							<span id="brithCom"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>公积金</td>
+						<td>
+							<input type="text" placeholder="" value="" />
+							<span class="common">%</span>
+							<span id="fundPer"></span>
+						</td>
+						<td>
+							<input type="text" placeholder="" value="" />
+							<span class="common">%</span>
+							<span id="fundCom"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>个税</td>
+						<td colspan="2"><span class="personal"></span><span class="common">国内个税起征点3500元</span></td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+	</body>
+</html>

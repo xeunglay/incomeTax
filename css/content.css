@@ -1,0 +1,24 @@
+*{margin: 0;padding: 0;}
+.container{margin: 0 auto;width: 520px;margin-top: 20px;height: auto;border: 1px solid burlywood;}
+.tip{width: 510px;height: 56px;padding: 5px; border-bottom: 1px solid burlywood;clear: both;}
+.picBack i{display: block;width: 56px;height: 56px;background:url(../img/tools-5.png) -144px -72px no-repeat;}
+.picBack{float: left;}
+.title{float: right;margin-left: 5px;width: 449px;}
+h4{font-weight: 400;margin-left: 5px;margin-bottom: 10px;}
+#pay{width: 100px;height: 24px;}
+#city,#project{width: 120px;height: 24px;}
+#enter{width: 70px;height: 26px;cursor: pointer;}
+input{font-size: 16px;}
+button{border: 0;font-size: 16px;}
+table{border-spacing: 0; border-collapse: collapse;width: 100%;margin-top: 10px;line-height: 40px;display: none;}
+table thead tr{border-top:1px solid burlywood;}
+table thead th{font-weight: 400;text-align: left; padding-left: 15px;}
+table tbody tr{background-color: blanchedalmond;margin-top: 5px;margin-bottom: 5px;border-top: 1px solid burlywood;}
+table tbody td{padding-left: 15px;}
+table td input{width: 68px;height: 20px;}
+p{margin-top: 10px; text-indent: 20px;}
+.tab_title{background-color: bisque;}
+.unit{float: right; margin-right:10px;color: #999;}
+.common{color: #999;}
+.personal{margin-right: 10px;}
+#error{color: red; margin-left: 20px;}
